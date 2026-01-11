@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    z-index: 2;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#result {
+    display: none;
+    margin-top: 15px;
+}
+
+#qrImg {
+    width: 200px;
+    margin-top: 10px;
+}
+
+/* Premium download button */
+#download {
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* 🔥 FULL SCREEN DRAGON */
+#dragon {
+    position: fixed;
+    top: 50%;
+    left: -750px;
+    width: 400px;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 5;
+    transition: transform 12s linear; /* MATCH REAL ANIMATION TIME */
+}
